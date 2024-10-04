@@ -34,7 +34,7 @@ Este projeto implementa um sistema de monitoramento de luminosidade e temperatur
  
 <br>
 
-## Explicando o <a href="path">Código</a> 🧑‍💻
+## Explicando o <a href="https://github.com/fiap-checkpoints-1ESPJ/cp-edge/blob/main/codigo_ESP32.cpp">Código</a> 🧑‍💻
 
 ### Dependências 📦
 <ul>
