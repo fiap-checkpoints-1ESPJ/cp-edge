@@ -13,12 +13,16 @@
 
 Link da simulação no <a href="https://github.com/fiap-checkpoints-1ESPJ/cp-edge/blob/main/screenshot%20ESP32.png">Wokwi</a>
 
-## Instruções
-Para fazer o projeto funcionar primeiro inicie o Wokwi e depois inicie o programa python.
-
 ## Explicação do Projeto 📖
+Este projeto implementa um sistema de monitoramento de luminosidade e temperatura/umidade usando um microcontrolador com Wi-Fi integrado, um sensor DHT, e comunicação com um broker MQTT.
 
- 
+## Instruções
+1. Faça o upload do código no seu microcontrolador, após configurar os parâmetros de rede Wi-Fi e MQTT.
+<br>
+2. Monitore o status da conexão e os dados do sensor via o broker MQTT.
+<br>
+3. Envie comandos via MQTT para controlar o LED, usando os tópicos configurados no código.
+
 ## Componentes 🛠️
 <ul>
     <li>ESP32</li>
@@ -41,7 +45,6 @@ Para fazer o projeto funcionar primeiro inicie o Wokwi e depois inicie o program
  
 <br>
  
-### `fiware_IOT.cc`
 Este código é responsável por conectar o dispositivo IoT à rede Wi-Fi e ao Broker MQTT para enviar e receber dados dos sensores e controlar o estado de saída do dispositivo (como o LED onboard).
 
 **Principais Funcionalidades**:
@@ -62,7 +65,6 @@ Este código é responsável por conectar o dispositivo IoT à rede Wi-Fi e ao B
 </ul>
 
 <br>
-
 
 ## Estrutura de Tópicos MQTT
 
