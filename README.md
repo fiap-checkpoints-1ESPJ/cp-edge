@@ -17,11 +17,11 @@ Link da simulação no <a href="https://github.com/fiap-checkpoints-1ESPJ/cp-edg
 Este projeto implementa um sistema de monitoramento de luminosidade e temperatura/umidade usando um microcontrolador com Wi-Fi integrado, um sensor DHT, e comunicação com um broker MQTT.
 
 ## Instruções
-1. Faça o upload do código no seu microcontrolador, após configurar os parâmetros de rede Wi-Fi e MQTT.
-<br>
-2. Monitore o status da conexão e os dados do sensor via o broker MQTT.
-<br>
-3. Envie comandos via MQTT para controlar o LED, usando os tópicos configurados no código.
+<ul>
+    <li>Faça o upload do código no seu microcontrolador, após configurar os parâmetros de rede Wi-Fi e MQTT.</li>
+    <li>2. Monitore o status da conexão e os dados do sensor via o broker MQTT.</li>
+    <li>3. Envie comandos via MQTT para controlar o LED, usando os tópicos configurados no código.</li>
+</ul>
 
 ## Componentes 🛠️
 <ul>
