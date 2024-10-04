@@ -11,7 +11,7 @@
  
 <img src="./screenshot ESP32.png" alt="print do circuito Arduino/printscreen Arduino circuit"/>
 
-Link da simulação no <a href="path">Wokwi</a>
+Link da simulação no <a href="https://wokwi.com/projects/410377764841984001">Wokwi</a>
 
 ## Explicação do Projeto 📖
 Este projeto implementa um sistema de monitoramento de luminosidade e temperatura/umidade usando um microcontrolador com Wi-Fi integrado, um sensor DHT, e comunicação com um broker MQTT.
