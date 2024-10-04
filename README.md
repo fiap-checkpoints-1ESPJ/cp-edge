@@ -19,8 +19,8 @@ Este projeto implementa um sistema de monitoramento de luminosidade e temperatur
 ## Instruções
 <ul>
     <li>Faça o upload do código no seu microcontrolador, após configurar os parâmetros de rede Wi-Fi e MQTT.</li>
-    <li>2. Monitore o status da conexão e os dados do sensor via o broker MQTT.</li>
-    <li>3. Envie comandos via MQTT para controlar o LED, usando os tópicos configurados no código.</li>
+    <li>Monitore o status da conexão e os dados do sensor via o broker MQTT.</li>
+    <li>Envie comandos via MQTT para controlar o LED, usando os tópicos configurados no código.</li>
 </ul>
 
 ## Componentes 🛠️
