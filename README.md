@@ -11,17 +11,13 @@
  
 <img src="./screenshot ESP32.png" alt="print do circuito Arduino/printscreen Arduino circuit"/>
 
-Link da simulação no <a href="[path](https://wokwi.com/projects/410377764841984001)">Wokwi</a>
+Link da simulação no <a href="https://github.com/fiap-checkpoints-1ESPJ/cp-edge/blob/main/screenshot%20ESP32.png">Wokwi</a>
 
 ## Instruções
 Para fazer o projeto funcionar primeiro inicie o Wokwi e depois inicie o programa python.
 
 ## Explicação do Projeto 📖
-Este projeto consiste em dois componentes principais:
-<ul>
-    <li>fiware_IOT.cc: Código para um dispositivo IoT baseado em ESP32 que lê dados de sensores (como DHT e luminosidade), conecta-se a uma rede Wi-Fi e publica/recebe informações de um Broker MQTT.</li>
-    <li>web_paho.py: Um servidor web em Flask que exibe os dados do dispositivo IoT em gráficos em tempo real, utilizando WebSockets para comunicação em tempo real e Paho MQTT para receber dados do dispositivo.</li>
-</ul>
+
  
 ## Componentes 🛠️
 <ul>
@@ -34,7 +30,7 @@ Este projeto consiste em dois componentes principais:
  
 <br>
 
-## Explicando o <a href="./fiware_IOT.cc">Código</a> 🧑‍💻
+## Explicando o <a href="path">Código</a> 🧑‍💻
 
 ### Dependências 📦
 <ul>
@@ -67,45 +63,6 @@ Este código é responsável por conectar o dispositivo IoT à rede Wi-Fi e ao B
 
 <br>
 
-## Explicando o <a href="./web_paho.py">Código</a> 🧑‍💻
-
-### Dependências 📦
-<ul>
-    <li>Flask</li>
-    <li>Flask-SocketIO</li>
-    <li>Paho-MQTT</li>
-    <li>Chart.js</li>
-    <li>Bootstrap</li>
-</ul>
- 
-<br>
-
-### `web_paho.py`
-Este código implementa um servidor web que utiliza Flask para servir uma página HTML que exibe os dados recebidos do dispositivo IoT em tempo real.
-
-**Principais Funcionalidades**:
-<ul>
-    <li>MQTT: Assina os tópicos /TEF/device010/attrs/p (potenciômetro) e /TEF/device010/attrs/dht (DHT) e atualiza a página web com os dados recebidos.</li>
-    <li>WebSocket: Utiliza SocketIO para enviar os dados recebidos via MQTT para a interface do usuário em tempo real.</li>
-    <li>Gráficos em Tempo Real: Utiliza o Chart.js para exibir gráficos de "gauge" (medidores) para a velocidade (potenciômetro), temperatura e umidade.</li>
-    <li>Página Web: Interface web com Bootstrap para layout e gráficos para visualização dos dados.</li>
-</ul>
-
-## Como Usar
-
-### 1. Dispositivo IoT (`fiware_IOT.cc`)
-<ul>
-    <li>Carregue o código `fiware_IOT.cc` em um ESP32.</li>
-    <li>Certifique-se de configurar as credenciais Wi-Fi e o endereço IP do Broker MQTT.</li>
-    <li>O dispositivo começará a publicar os dados dos sensores DHT e luminosidade para os tópicos configurados, além de receber comandos para ligar/desligar o LED.</li>
-</ul>
-
-### 2. Servidor Web (`web_paho.py`)
-<ul>
-    <li>Instale as dependências do Python: Flask, Flask-SocketIO, Paho-MQTT. </li>
-    <li>Execute o arquivo web_paho.py para iniciar o servidor web.</li>
-    <li>Acesse http://localhost:5000 em seu navegador para visualizar os dados em tempo real.</li>
-</ul>
 
 ## Estrutura de Tópicos MQTT
 
