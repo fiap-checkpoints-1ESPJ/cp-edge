@@ -1,4 +1,4 @@
-# CP5 - Edge Computing
+# Checkpoint 5 - Edge Computing
 
 ## Integrantes 👋
 <ul>
